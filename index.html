@@ -498,10 +498,11 @@
 
         <div class="footer-subscribe">
           <p class="footer-subscribe-text">Subscribe</p>
-          <form>
-            <label for="footer-email"
+          <form class="footer-subcribe-form">
+            <label for="footer-email" class="footer-email-label"
               ><input
                 type="email"
+                class="footer-email-input"
                 name="footer-subscribe-email"
                 id="footer-email"
                 placeholder="E-mail"
@@ -516,7 +517,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop data-modal">
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-button-close" data-modal-close>
           <svg class="icon-modal-close" width="8" height="8">
@@ -526,13 +527,13 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form>
           <div class="modal-field">
-            <label for="modal-user-name" class="modal-text-name">Name</label>
+            <label for="user-name" class="modal-text-name">Name</label>
             <div class="modal-field-wrap">
               <input
                 class="modal-input"
                 type="text"
                 name="user-name"
-                id="modal-user-name"
+                id="user-name"
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -567,14 +568,12 @@
               </svg>
             </div>
           </div>
-          <div>
-            <label for="modal-textarea-text" class="modal-text-name"
-              >Comment</label
-            >
+          <div class="modal-textarea-comment">
+            <label for="user-comment" class="modal-text-name">Comment</label>
             <textarea
               class="modal-textarea"
-              name="modal-textarea-text"
-              id="modal-textarea-text"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -582,7 +581,7 @@
             <input
               class="modal-check visually-hidden"
               type="checkbox"
-              name="check-accept"
+              name="user-privacy"
               id="user-privacy"
               value="true"
             />
