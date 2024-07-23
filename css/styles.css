@@ -621,6 +621,7 @@ button {
 
 .icon-modal-close {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-close:hover .icon-modal-close,
@@ -728,6 +729,10 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-field {
+  margin-bottom: 24px;
 }
 
 .modal-check:checked + .modal-check-text .checking-box {
